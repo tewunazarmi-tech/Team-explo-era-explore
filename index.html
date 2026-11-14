@@ -711,31 +711,10 @@ input.shake { animation: shake .4s; }
 </main>
 <main id="aoP3" hidden>
   <header class="ahead" style="text-align:center"><p class="eyebrow" data-t="payment.name">Team Explo Era</p><h1 data-t="payment.payment-options">Payment Options</h1><p class="note" style="margin-top:12px" data-t="payment.pay-your-advance-to">Pay your advance to confirm your booking</p></header>
-  <div class="ac">
-    <div class="tabs" role="tablist" aria-label="Payment method">
-      <button type="button" role="tab" class="tab on" data-p="qr" aria-selected="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM20 14v3M14 20h3M20 20h1"/></svg><span data-t="payment.qr">QR</span></button>
-      <button type="button" role="tab" class="tab" data-p="upi" aria-selected="false"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M2.5 10h19"/></svg><span data-t="payment.upi-id">UPI ID</span></button>
-      <button type="button" role="tab" class="tab" data-p="bank" aria-selected="false"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V10l7-5 7 5v11M9 21v-6h6v6"/></svg><span data-t="payment.bank">Bank</span></button>
-    </div>
-    <div class="pn" data-pn="qr" role="tabpanel">
-      <div class="qrcard"><div class="qr-name" id="payQrName"></div><div class="qr-img" role="img" aria-label="UPI payment QR code"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 37 37" shape-rendering="crispEdges"><rect x="-2" y="-2" width="37" height="37" fill="#fff"/><path fill="#000" d="M0 0h7v1h-7zM9 0h1v1h-1zM13 0h1v1h-1zM15 0h2v1h-2zM19 0h1v1h-1zM23 0h1v1h-1zM26 0h7v1h-7zM0 1h1v1h-1zM6 1h1v1h-1zM8 1h2v1h-2zM11 1h2v1h-2zM15 1h4v1h-4zM20 1h1v1h-1zM26 1h1v1h-1zM32 1h1v1h-1zM0 2h1v1h-1zM2 2h3v1h-3zM6 2h1v1h-1zM9 2h3v1h-3zM14 2h1v1h-1zM16 2h1v1h-1zM18 2h1v1h-1zM20 2h4v1h-4zM26 2h1v1h-1zM28 2h3v1h-3zM32 2h1v1h-1zM0 3h1v1h-1zM2 3h3v1h-3zM6 3h1v1h-1zM8 3h2v1h-2zM11 3h1v1h-1zM14 3h2v1h-2zM17 3h2v1h-2zM22 3h3v1h-3zM26 3h1v1h-1zM28 3h3v1h-3zM32 3h1v1h-1zM0 4h1v1h-1zM2 4h3v1h-3zM6 4h1v1h-1zM10 4h1v1h-1zM12 4h1v1h-1zM15 4h2v1h-2zM19 4h1v1h-1zM23 4h1v1h-1zM26 4h1v1h-1zM28 4h3v1h-3zM32 4h1v1h-1zM0 5h1v1h-1zM6 5h1v1h-1zM8 5h1v1h-1zM10 5h1v1h-1zM13 5h1v1h-1zM15 5h2v1h-2zM18 5h1v1h-1zM20 5h2v1h-2zM24 5h1v1h-1zM26 5h1v1h-1zM32 5h1v1h-1zM0 6h7v1h-7zM8 6h1v1h-1zM10 6h1v1h-1zM12 6h1v1h-1zM14 6h1v1h-1zM16 6h1v1h-1zM18 6h1v1h-1zM20 6h1v1h-1zM22 6h1v1h-1zM24 6h1v1h-1zM26 6h7v1h-7zM12 7h1v1h-1zM14 7h3v1h-3zM18 7h5v1h-5zM24 7h1v1h-1zM0 8h5v1h-5zM6 8h5v1h-5zM12 8h1v1h-1zM14 8h3v1h-3zM19 8h1v1h-1zM22 8h1v1h-1zM24 8h2v1h-2zM27 8h1v1h-1zM29 8h1v1h-1zM31 8h1v1h-1zM0 9h2v1h-2zM3 9h3v1h-3zM7 9h1v1h-1zM9 9h1v1h-1zM16 9h6v1h-6zM26 9h1v1h-1zM29 9h1v1h-1zM32 9h1v1h-1zM2 10h8v1h-8zM11 10h2v1h-2zM15 10h2v1h-2zM24 10h1v1h-1zM27 10h1v1h-1zM29 10h1v1h-1zM2 11h3v1h-3zM9 11h3v1h-3zM14 11h3v1h-3zM18 11h5v1h-5zM25 11h1v1h-1zM28 11h1v1h-1zM30 11h1v1h-1zM32 11h1v1h-1zM0 12h1v1h-1zM2 12h3v1h-3zM6 12h1v1h-1zM9 12h1v1h-1zM11 12h4v1h-4zM16 12h2v1h-2zM19 12h1v1h-1zM22 12h1v1h-1zM25 12h1v1h-1zM27 12h2v1h-2zM32 12h1v1h-1zM0 13h1v1h-1zM3 13h2v1h-2zM7 13h4v1h-4zM12 13h1v1h-1zM18 13h3v1h-3zM23 13h2v1h-2zM26 13h1v1h-1zM29 13h1v1h-1zM31 13h2v1h-2zM0 14h1v1h-1zM2 14h1v1h-1zM4 14h4v1h-4zM10 14h1v1h-1zM13 14h3v1h-3zM18 14h1v1h-1zM20 14h2v1h-2zM25 14h5v1h-5zM0 15h4v1h-4zM5 15h1v1h-1zM7 15h3v1h-3zM12 15h1v1h-1zM14 15h3v1h-3zM21 15h4v1h-4zM26 15h2v1h-2zM29 15h3v1h-3zM1 16h1v1h-1zM4 16h4v1h-4zM9 16h2v1h-2zM12 16h1v1h-1zM14 16h2v1h-2zM17 16h1v1h-1zM19 16h1v1h-1zM22 16h1v1h-1zM25 16h1v1h-1zM27 16h3v1h-3zM32 16h1v1h-1zM0 17h2v1h-2zM5 17h1v1h-1zM7 17h1v1h-1zM10 17h1v1h-1zM13 17h1v1h-1zM16 17h6v1h-6zM23 17h2v1h-2zM26 17h1v1h-1zM30 17h1v1h-1zM32 17h1v1h-1zM1 18h1v1h-1zM4 18h3v1h-3zM9 18h1v1h-1zM12 18h1v1h-1zM14 18h4v1h-4zM25 18h1v1h-1zM30 18h2v1h-2zM0 19h4v1h-4zM8 19h5v1h-5zM14 19h2v1h-2zM18 19h2v1h-2zM21 19h2v1h-2zM24 19h3v1h-3zM28 19h3v1h-3zM0 20h1v1h-1zM2 20h8v1h-8zM12 20h1v1h-1zM14 20h1v1h-1zM17 20h1v1h-1zM20 20h1v1h-1zM22 20h1v1h-1zM25 20h1v1h-1zM28 20h1v1h-1zM0 21h3v1h-3zM4 21h1v1h-1zM7 21h3v1h-3zM16 21h1v1h-1zM18 21h3v1h-3zM23 21h5v1h-5zM30 21h3v1h-3zM0 22h1v1h-1zM4 22h3v1h-3zM9 22h1v1h-1zM12 22h2v1h-2zM15 22h3v1h-3zM21 22h1v1h-1zM24 22h2v1h-2zM29 22h3v1h-3zM0 23h1v1h-1zM5 23h1v1h-1zM8 23h1v1h-1zM10 23h3v1h-3zM14 23h2v1h-2zM19 23h1v1h-1zM21 23h2v1h-2zM24 23h4v1h-4zM29 23h3v1h-3zM0 24h2v1h-2zM3 24h2v1h-2zM6 24h1v1h-1zM9 24h1v1h-1zM11 24h5v1h-5zM17 24h1v1h-1zM23 24h7v1h-7zM31 24h1v1h-1zM8 25h1v1h-1zM10 25h2v1h-2zM16 25h1v1h-1zM20 25h2v1h-2zM23 25h2v1h-2zM28 25h1v1h-1zM31 25h2v1h-2zM0 26h7v1h-7zM8 26h1v1h-1zM10 26h1v1h-1zM12 26h1v1h-1zM14 26h2v1h-2zM17 26h1v1h-1zM20 26h1v1h-1zM22 26h3v1h-3zM26 26h1v1h-1zM28 26h4v1h-4zM0 27h1v1h-1zM6 27h1v1h-1zM9 27h1v1h-1zM11 27h2v1h-2zM14 27h1v1h-1zM16 27h1v1h-1zM20 27h2v1h-2zM24 27h1v1h-1zM28 27h1v1h-1zM30 27h1v1h-1zM0 28h1v1h-1zM2 28h3v1h-3zM6 28h1v1h-1zM8 28h1v1h-1zM11 28h1v1h-1zM13 28h3v1h-3zM17 28h1v1h-1zM19 28h2v1h-2zM22 28h1v1h-1zM24 28h6v1h-6zM32 28h1v1h-1zM0 29h1v1h-1zM2 29h3v1h-3zM6 29h1v1h-1zM8 29h4v1h-4zM14 29h1v1h-1zM18 29h2v1h-2zM21 29h2v1h-2zM25 29h1v1h-1zM27 29h3v1h-3zM0 30h1v1h-1zM2 30h3v1h-3zM6 30h1v1h-1zM8 30h2v1h-2zM13 30h3v1h-3zM18 30h1v1h-1zM21 30h1v1h-1zM24 30h1v1h-1zM26 30h1v1h-1zM29 30h1v1h-1zM31 30h1v1h-1zM0 31h1v1h-1zM6 31h1v1h-1zM8 31h2v1h-2zM11 31h1v1h-1zM14 31h1v1h-1zM19 31h3v1h-3zM23 31h1v1h-1zM27 31h1v1h-1zM29 31h2v1h-2zM0 32h7v1h-7zM8 32h2v1h-2zM11 32h7v1h-7zM19 32h1v1h-1zM22 32h4v1h-4zM27 32h1v1h-1zM29 32h1v1h-1zM31 32h1v1h-1z"/></svg></div><div class="qr-id" id="payQrId"></div><p class="qr-sub" data-t="payment.scan-to-pay-with">Scan to pay with any UPI app</p></div>
-      <p class="qr-amt" data-t="payment.scan-to-pay">Scan to Pay <b class="payAmt"></b></p>
-      <p class="note tip" data-t="payment.tip-take-a-screenshot">Tip: take a screenshot of this QR, then scan it from your gallery in any UPI app.</p>
-    </div>
-    <div class="pn" data-pn="upi" role="tabpanel" hidden>
-      <div class="cp"><div><small data-t="payment.upi-id-2">UPI ID</small><b id="payUpi"></b></div><button type="button" class="cb" data-k="upi" aria-label="Copy UPI ID"></button></div>
-      <p class="bal" data-t="payment.amount">Amount: <span class="payAmt"></span></p>
-    </div>
-    <div class="pn" data-pn="bank" role="tabpanel" hidden>
-      <div class="cp"><div><small data-t="payment.account-name">Account Name</small><b id="payName"></b></div><button type="button" class="cb" data-k="name" aria-label="Copy account name"></button></div>
-      <div class="cp"><div><small data-t="payment.account-number">Account Number</small><b id="payAcc"></b></div><button type="button" class="cb" data-k="acc" aria-label="Copy account number"></button></div>
-      <div class="cp"><div><small data-t="payment.ifsc">IFSC</small><b id="payIfsc"></b></div><button type="button" class="cb" data-k="ifsc" aria-label="Copy IFSC"></button></div>
-      <div class="cp"><div><small data-t="payment.bank-2">Bank</small><b id="payBank"></b></div><button type="button" class="cb" data-k="bank" aria-label="Copy bank name"></button></div>
-    </div>
-  </div>
+  <div class="ac" id="payMethods" hidden></div>
   <div class="ac"><h2 data-t="payment.order-summary">Order Summary</h2><div class="inv" style="margin-top:6px"><span data-t="payment.package">Package</span><span id="payPkg"></span></div><div class="inv"><span><b data-t="payment.total">Total</b></span><span id="payTotal"></span></div></div>
   <div class="ac"><label class="lab" for="payAdv" id="payAdvLab"></label><input class="fld" id="payAdv" type="text" maxlength="7" inputmode="numeric" autocomplete="off"  data-ph="payment-hint.min-1000" placeholder="Min 1000"><p class="perr" id="payErr" role="status" aria-live="polite"></p><p class="bal" id="payBal"></p></div>
-  <div class="ac"><p class="note" style="margin:0;color:#d2d2d6;font-size:15px" data-t="payment.pay-using-any-of">Pay using any of the methods above, then tap Submit to chat with your tour guide on WhatsApp.</p></div>
+  <div class="ac"><p class="note" style="margin:0;color:#d2d2d6;font-size:15px" data-t="payment.pay-using-any-of">Tap Submit to send your booking details to our tour guide on WhatsApp.</p></div>
   <button type="button" class="pay" id="paySubmit" data-t="payment.submit">Submit</button>
 </main>
 <div class="sheet" id="aoSheet" hidden role="dialog" aria-modal="true" aria-labelledby="aoSheetTitle"><div class="sheet-in" id="aoSheetIn"><div class="sheet-top"><h2 id="aoSheetTitle" data-t="payment.refund-policy-of-name">Refund Policy of Team Explo Era</h2><button type="button" class="sheet-x" id="aoSheetX" aria-label="Close"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div><div id="aoSheetBody"></div><label class="chk rd"><input type="checkbox" id="aoRead"><span data-t="payment.i-have-read-the">I have read the Refund Policy.</span></label><button type="button" class="pay" id="aoSheetOk" disabled data-t="payment.confirm">Confirm</button></div></div>
@@ -794,14 +773,32 @@ var SITE = {
   },
   thalis: ["Veg Thali", "Chicken Thali", "Pork Thali"],   /* lunch choices, all charged at the "lunch" price */
 
-  /* ---------- PAYMENT DETAILS (check every letter and number!) ---------- */
+  /* ======================================================================
+     PAYMENT DETAILS  -  EASY EDIT AREA
+     HOW IT WORKS: type your details between the quote marks "like this".
+       - Filled in  -> that payment option shows on the payment page.
+       - Left empty "" -> that option is hidden automatically.
+     Leave all of them empty and the page only shows the Submit button,
+     which opens WhatsApp.  Check every letter and number after editing!
+     ====================================================================== */
   payment: {
     packageName: "Trek Package",
-    upi: "blangwar8134@okicici",
-    accountName: "Brino Langwar",
-    accountNumber: "1310201700037391",
-    ifsc: "PUNB0131020",
-    bank: "Punjab National Bank"
+
+    /* 1) UPI ID  (example: "name@okicici")  */
+    upi: "",
+
+    /* 2) BANK TRANSFER  (fill these 4; the Bank option shows if Account Number is filled) */
+    accountName: "",
+    accountNumber: "",
+    ifsc: "",
+    bank: "",
+
+    /* 3) QR IMAGE  - put the picture of your QR here. Choose ONE way:
+          a) Upload the QR picture next to this html file and write its file name, e.g. "qr.png"
+          b) Or paste a full link, e.g. "https://yoursite.com/qr.png"
+       The name shown above the QR is the Account Name (or write another one here): */
+    qrImage: "",
+    qrName: ""
   },
 
   /* ---------- RATING BADGE ---------- */
@@ -839,9 +836,50 @@ var SITE = {
     { name: "Parking", fact: "{parking}", text: ["Parking is paid. It is available at the homestay and at the destination, and the fee is the same at both."] },
   ],
 
+  /* ======================================================================
+     WEBSITE PICTURES  -  EASY EDIT AREA
+     These are the pictures on the home screen (not the Gallery page, that
+     one is further down). Each one already has a built-in picture.
+       - Leave "" empty  -> the built-in picture stays.
+       - Type a file name or a link -> YOUR picture replaces it.
+     HOW: upload your picture next to this html file, then type its name,
+          e.g.  backpack: "my-bag.png"   (a full https:// link also works).
+     TIPS: use PNG with a see-through background for the 4 pictures below,
+           and keep the SAME SHAPE as the old one (see sizes) so it fits.
+           If a file name is wrong, the built-in picture is kept.
+     ====================================================================== */
+  images: {
+    /* If your pictures are inside a folder, write it here, e.g. "images/" (keep the slash). Else leave "". */
+    folder: "",
+
+    backpack: "",   /* Home card 1 "Five ways to explore"  - tall picture, about 526 x 840 */
+    tent: "",       /* Home card 2 "How it works"          - wide picture, about 560 x 314 */
+    boat: "",       /* Home card 3 "Ready when you are"    - wide picture, about 560 x 294 */
+    jeep: "",       /* The big moving 4x4 on the home screen - wide picture, exactly 623 x 386 shape */
+
+    favicon: ""     /* Tiny icon on the browser tab, square, e.g. "icon.png" (about 64 x 64) */
+    /* The picture shown when the website link is shared on WhatsApp/Facebook is
+       "shareImage" in the business details at the top (needs a full https:// link, 1200 x 630). */
+  },
+
   /* ---------- GALLERY ---------- */
-  /* To add a picture: put its web address (or an uploaded image link) in src. Pictures with an empty src show a "coming soon" box. */
+  /* ======================================================================
+     GALLERY PHOTOS  -  EASY EDIT AREA
+     There are 10 photo slots below, in the order they appear on the page.
+     TO ADD A PICTURE (3 steps):
+       1. Upload your picture to the same place as this html file
+          (or into a folder, see "folder" below).
+       2. Type its file name between the quotes of src, e.g.  src: "waterfall.jpg"
+          (a full link like "https://site.com/pic.jpg" also works).
+       3. Save. Done!
+     TO CHANGE the words under a picture, edit its title and text.
+     Leave src empty "" and that slot shows a "Photo coming soon" box.
+     Tip: use .jpg or .webp, under 500 KB each, so the page loads fast.
+     ====================================================================== */
   gallery: {
+    /* If your pictures are inside a folder, write the folder name here, e.g. "images/"
+       (keep the slash at the end). If they sit next to this html file, leave it empty "". */
+    folder: "",
     photos: [
       { src: "", alt: "Waterfall pool at Krem Chympe", title: "Khaddum (Chympe) Waterfall", text: "The main destination, with a pool at its foot." },
       { src: "", alt: "Bamboo raft on the river", title: "Bamboo rafting", text: "Floating with your guide, life jacket on." },
@@ -937,14 +975,13 @@ var SITE = {
     advLabel: "Advance Payment (Min {amount})",
     balance: "Balance left to pay on arrival: {amount}",
     copied: "Copied",
-    paymentMethods: { qr: "QR Scanner", upi: "UPI ID", bank: "Bank Transfer" },
     /* invoice line names. {people} and {count} are filled in automatically */
     invoice: { jeep: "4\u00D74 Jeep (per group)", guide: "Local Guide (1 guide)", adventure: "Adventure Activities ({people})", tent: "Camping Tent Rental \u00D7 {count}", meals: "Camping Meals ({people})" },
     whatsapp: {
-      bookingIntro: "Hi {name}, I have paid the advance for my booking.",
+      bookingIntro: "Hi {name}, I would like to confirm my booking.",
       question: "Hi {name}, I have a question about the Krem Chympe trip:",
       refundQuestion: "Hi {name}, I have a question about the refund policy:",
-      labels: { name: "Name", phone: "WhatsApp", date: "Visit date", note: "Special request", people: "People", children: "children", package: "Package", total: "Total", advance: "Advance paid", balance: "Balance on arrival", via: "Paid via" }
+      labels: { name: "Name", phone: "WhatsApp", date: "Visit date", note: "Special request", people: "People", children: "children", package: "Package", total: "Total", advance: "Advance", balance: "Balance on arrival" }
     }
   },
 
@@ -1131,22 +1168,10 @@ var SITE = {
     "payment.name": "{name}",
     "payment.payment-options": "Payment Options",
     "payment.pay-your-advance-to": "Pay your advance to confirm your booking",
-    "payment.qr": "QR",
-    "payment.upi-id": "UPI ID",
-    "payment.bank": "Bank",
-    "payment.scan-to-pay-with": "Scan to pay with any UPI app",
-    "payment.scan-to-pay": "Scan to Pay",
-    "payment.tip-take-a-screenshot": "Tip: take a screenshot of this QR, then scan it from your gallery in any UPI app.",
-    "payment.upi-id-2": "UPI ID",
-    "payment.amount": "Amount:",
-    "payment.account-name": "Account Name",
-    "payment.account-number": "Account Number",
-    "payment.ifsc": "IFSC",
-    "payment.bank-2": "Bank",
     "payment.order-summary": "Order Summary",
     "payment.package": "Package",
     "payment.total": "Total",
-    "payment.pay-using-any-of": "Pay using any of the methods above, then tap Submit to chat with your tour guide on WhatsApp.",
+    "payment.pay-using-any-of": "Tap Submit to send your booking details to our tour guide on WhatsApp.",
     "payment.submit": "Submit",
     "payment.refund-policy-of-name": "Refund Policy of {name}",
     "payment.i-have-read-the": "I have read the Refund Policy.",
@@ -1213,6 +1238,29 @@ var SITE = {
   function scrollY() { return window.pageYOffset || document.documentElement.scrollTop || 0; }
 
   /* ---------- 2D Gypsy cutout that rides the card back, then stays in the mockup ---------- */
+  /* ---- Your own pictures from SITE.images (empty = keep the built-in one) ---- */
+  (function () {
+    var I = SITE.images || {};
+    function url(raw) {
+      raw = (raw || '').trim(); if (!raw) return '';
+      return /^(https?:|data:|blob:|\/|\.\.?\/)/i.test(raw) ? raw : (I.folder || '') + raw;
+    }
+    function swap(img, raw) {
+      var u = url(raw); if (!img || !u) return;
+      var keep = img.getAttribute('src'), t = new Image();
+      t.onload = function () {   /* only swap once the new picture really loads */
+        img.src = u;
+        if (img.id === 'can3d') { var g = document.getElementById('gypBack'); if (g) g.src = u; }   /* the jeep also has a back copy */
+      };
+      t.onerror = function () { img.src = keep; };
+      t.src = u;
+    }
+    var objs = document.querySelectorAll('#slides .slot img.obj');
+    swap(objs[0], I.backpack); swap(objs[1], I.tent); swap(objs[2], I.boat);
+    swap(document.getElementById('can3d'), I.jeep);
+    var f = url(I.favicon);
+    if (f) { var l = document.querySelector('link[rel~="icon"]') || document.head.appendChild(document.createElement('link')); l.rel = 'icon'; l.href = f; }
+  })();
   var cv = $('can3d'), RATIO = 0.6196;
   var gypBack = $('gypBack'); gypBack.src = cv.src; slot.appendChild(cv);
   function canUpdate(x, y, cardW, f, p) {
@@ -2094,8 +2142,15 @@ var SITE = {
   function rand(a, b) { return a + Math.random() * (b - a); }
   function tile(p) {
     var box = el('span', 'ph');
-    if (p.src) { var im = el('img'); im.src = p.src; im.alt = p.alt; im.loading = 'lazy'; box.appendChild(im); }
-    else { var n = el('span', 'soon'); n.textContent = SITE.messages.photoSoon; box.appendChild(n); }
+    function soon() { var n = el('span', 'soon'); n.textContent = SITE.messages.photoSoon; box.appendChild(n); }
+    var raw = (p.src || '').trim();
+    if (raw) {
+      /* a plain file name gets the folder in front; links (http, data:, /) are used as typed */
+      var url = /^(https?:|data:|blob:|\/|\.\.?\/)/i.test(raw) ? raw : (SITE.gallery.folder || '') + raw;
+      var im = el('img'); im.alt = p.alt; im.loading = 'lazy';
+      im.addEventListener('error', function () { if (im.parentNode) im.parentNode.removeChild(im); soon(); });
+      im.src = url; box.appendChild(im);
+    } else soon();
     return box;
   }
   function cap(p, on) {
@@ -2466,27 +2521,21 @@ html.rp-typing #rate{visibility:hidden}
 #aoP3 .ahead .note{font-size:13px;margin-top:8px}
 #aoP3 .ac{padding:18px;border-radius:20px}
 #aoP3 .ac h2{font-size:17px}
-#aoP3 .tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;padding:4px;border-radius:99px;background:#141416;border:1px solid var(--aline)}
-#aoP3 .tab{display:flex;align-items:center;justify-content:center;gap:7px;min-height:46px;padding:0 6px;border:0;border-radius:99px;background:none;color:#a0a0a6;font:500 13.5px var(--font-body);cursor:pointer;-webkit-tap-highlight-color:transparent;transition:background .25s,color .25s,box-shadow .25s}
-#aoP3 .tab svg{flex:none}
+#aoP3 .tip{margin:10px 0 0;font-size:12.5px;text-align:center}
+#aoP3 .tabs{display:flex;gap:6px;padding:5px;border-radius:99px;background:#1d1d21}
+#aoP3 .tab{flex:1;display:flex;align-items:center;justify-content:center;min-height:44px;padding:0 6px;border:0;border-radius:99px;background:none;color:#a0a0a6;font:500 13.5px var(--font-body);cursor:pointer}
 #aoP3 .tab.on{background:var(--red);color:#fff;box-shadow:0 6px 20px rgba(229,21,60,.35)}
 #aoP3 .pn{margin-top:16px}
 #aoP3 .pn[hidden]{display:none}
 #aoP3 .qrcard{display:grid;justify-items:center;gap:12px;padding:18px 16px;border-radius:18px;background:#fff;color:#111}
 #aoP3 .qr-name{font-weight:600;font-size:16px;color:#222}
-#aoP3 .qr-img{width:min(100%,230px);aspect-ratio:1}
-#aoP3 .qr-img svg{display:block;width:100%;height:100%}
-#aoP3 .qr-id{font:500 12.5px var(--font-mono);color:#444;overflow-wrap:anywhere;text-align:center}
+#aoP3 .qr-img{display:block;width:min(100%,230px);height:auto;aspect-ratio:1;object-fit:contain}
 #aoP3 .qr-sub{margin:0;font-size:13px;color:#555}
-#aoP3 .qr-amt{margin:14px 0 0;text-align:center;font-size:15px;color:#d2d2d6}
-#aoP3 .qr-amt b{font-size:18px;color:#fff;font-weight:600}
-#aoP3 .tip{margin:10px 0 0;font-size:12.5px;text-align:center}
 #aoP3 .cp{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 14px 14px 16px;border-radius:14px;border:1px solid var(--aline);background:#1d1d21}
 #aoP3 .cp+.cp{margin-top:10px}
 #aoP3 .cp small{display:block;margin-bottom:4px;color:var(--mut);font-size:12.5px}
 #aoP3 .cp b{font:500 16px var(--font-mono);overflow-wrap:anywhere;color:var(--afg)}
-#aoP3 .cb{flex:none;display:grid;place-items:center;width:44px;height:44px;padding:0;border:1px solid var(--aline);border-radius:50%;background:#141416;color:#fff;cursor:pointer;transition:background .2s,border-color .2s}
-#aoP3 .cb.done{background:var(--red);border-color:var(--red)}
+#aoP3 .cb{flex:none;width:42px;height:42px;display:grid;place-items:center;border:0;border-radius:12px;background:#2a2a30;color:#fff;cursor:pointer}
 #aoP3 .lab{display:block;margin:0 0 10px;font-size:15px;color:#d2d2d6}
 #aoP3 .fld{width:100%;height:56px;padding:0 16px;border:1px solid var(--aline);border-radius:14px;background:#1d1d21;color:var(--afg);font:500 18px var(--font-body);outline:none;transition:border-color .2s,box-shadow .2s}
 #aoP3 .fld:focus{border-color:rgba(229,21,60,.7);box-shadow:0 0 0 4px rgba(229,21,60,.14)}
@@ -2565,15 +2614,64 @@ html.rp-typing #rate{visibility:hidden}
   $('#aoSheetX').onclick=closeSheet;
 
   /* ---- Payment page ---- */
-  var PAYC=SITE.payment,PAY={upi:PAYC.upi,name:PAYC.accountName,acc:PAYC.accountNumber,ifsc:PAYC.ifsc,bank:PAYC.bank,wa:SITE.business.whatsapp,minAdv:SITE.prices.minAdvance,pkg:PAYC.packageName};
-  var METHODS=SITE.messages.paymentMethods,method='qr',payBad=true;
+  var PAYC=SITE.payment,PAY={wa:SITE.business.whatsapp,minAdv:SITE.prices.minAdvance,pkg:PAYC.packageName};
+  var payBad=true;
+  var adv=$('#payAdv');
+  $('#payPkg').textContent=PAY.pkg;
+  /* ---- Payment options: built from SITE.payment above. Empty = hidden. ---- */
   var COPY_SVG='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/></svg>';
   var OK_SVG='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>';
-  var adv=$('#payAdv');
-  $$('#aoP3 .cb').forEach(function(b){b.innerHTML=COPY_SVG});
-  $('#payQrName').textContent=PAY.name;$('#payQrId').textContent='UPI ID: '+PAY.upi;
-  $('#payUpi').textContent=PAY.upi;$('#payName').textContent=PAY.name;$('#payAcc').textContent=PAY.acc;$('#payIfsc').textContent=PAY.ifsc;$('#payBank').textContent=PAY.bank;
-  $('#payPkg').textContent=PAY.pkg;
+  (function(){
+    var box=$('#payMethods');if(!box)return;
+    function has(v){return typeof v==='string'&&v.trim()!==''}
+    function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
+    function row(label,val){
+      var r=el('div','cp'),d=el('div'),b=el('button','cb');
+      d.appendChild(el('small',null,label));d.appendChild(el('b',null,val));
+      b.type='button';b.setAttribute('aria-label','Copy '+label);b.innerHTML=COPY_SVG;
+      b.onclick=function(){copyText(val,function(){b.innerHTML=OK_SVG;toast(SITE.messages.copied);setTimeout(function(){b.innerHTML=COPY_SVG},1600)})};
+      r.appendChild(d);r.appendChild(b);return r;
+    }
+    function copyText(t,done){
+      function fb(){var a=document.createElement('textarea');a.value=t;a.style.cssText='position:fixed;opacity:0';document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(a);done()}
+      if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done,fb)}else fb();
+    }
+    var opts=[];
+    if(has(PAYC.qrImage)){
+      var card=el('div','qrcard'),img=el('img','qr-img');
+      var nm=has(PAYC.qrName)?PAYC.qrName:(PAYC.accountName||'');
+      if(nm)card.appendChild(el('div','qr-name',nm));
+      img.src=PAYC.qrImage.trim();img.alt='UPI payment QR code';img.draggable=false;
+      card.appendChild(img);card.appendChild(el('p','qr-sub','Scan to pay with any UPI app'));
+      opts.push({id:'qr',label:'QR',nodes:[card]});
+    }
+    if(has(PAYC.upi)){opts.push({id:'upi',label:'UPI ID',nodes:[row('UPI ID',PAYC.upi.trim())]})}
+    if(has(PAYC.accountNumber)){
+      var n=[];
+      if(has(PAYC.accountName))n.push(row('Account Name',PAYC.accountName.trim()));
+      n.push(row('Account Number',PAYC.accountNumber.trim()));
+      if(has(PAYC.ifsc))n.push(row('IFSC',PAYC.ifsc.trim()));
+      if(has(PAYC.bank))n.push(row('Bank',PAYC.bank.trim()));
+      opts.push({id:'bank',label:'Bank',nodes:n});
+    }
+    if(!opts.length)return;
+    var tabs=el('div','tabs'),panes=[];tabs.setAttribute('role','tablist');
+    opts.forEach(function(o,i){
+      var t=el('button','tab'+(i?'':' on'),o.label),p=el('div','pn');
+      t.type='button';t.setAttribute('role','tab');t.setAttribute('aria-selected',i?'false':'true');
+      p.hidden=!!i;o.nodes.forEach(function(x){p.appendChild(x)});panes.push(p);
+      t.onclick=function(){
+        Array.prototype.forEach.call(tabs.children,function(x){var on=x===t;x.classList.toggle('on',on);x.setAttribute('aria-selected',on?'true':'false')});
+        panes.forEach(function(x){x.hidden=x!==p});
+      };
+      tabs.appendChild(t);
+    });
+    if(opts.length>1)box.appendChild(tabs);
+    panes.forEach(function(p){box.appendChild(p)});
+    box.hidden=false;
+    var note=document.querySelector('[data-t="payment.pay-using-any-of"]');
+    if(note)note.textContent='Pay using the details above, then tap Submit to chat with your tour guide on WhatsApp.';
+  })();
   function advVal(){var v=parseInt(adv.value.replace(/\D/g,''),10);return isNaN(v)?0:v}
   function renderPay(){
     var total=renderInvoice.total||0,min=Math.min(PAY.minAdv,total);
@@ -2589,19 +2687,6 @@ html.rp-typing #rate{visibility:hidden}
     $$('#aoP3 .payAmt').forEach(function(e){e.textContent=inr(payBad?total:v)});
   }
   adv.addEventListener('input',function(){var c=adv.value.replace(/\D/g,'');if(c!==adv.value)adv.value=c;updPay()});
-  $$('#aoP3 .tab').forEach(function(t){t.onclick=function(){
-    method=t.dataset.p;
-    $$('#aoP3 .tab').forEach(function(x){var on=x===t;x.classList.toggle('on',on);x.setAttribute('aria-selected',on?'true':'false')});
-    $$('#aoP3 .pn').forEach(function(x){x.hidden=x.dataset.pn!==method});
-  }});
-  function copyText(t,done){
-    function fb(){var a=document.createElement('textarea');a.value=t;a.style.cssText='position:fixed;opacity:0';root.appendChild(a);a.select();try{document.execCommand('copy')}catch(e){}root.removeChild(a);done()}
-    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done,fb)}else fb();
-  }
-  $('#aoP3').addEventListener('click',function(e){
-    var b=e.target.closest('.cb');if(!b)return;
-    copyText(PAY[b.dataset.k],function(){b.classList.add('done');b.innerHTML=OK_SVG;toast(SITE.messages.copied);setTimeout(function(){b.classList.remove('done');b.innerHTML=COPY_SVG},1600)});
-  });
   $('#paySubmit').onclick=function(){
     updPay();
     if(payBad){adv.classList.add('shake');setTimeout(function(){adv.classList.remove('shake')},450);adv.focus();return}
@@ -2616,8 +2701,8 @@ html.rp-typing #rate{visibility:hidden}
     if(B.note)m+=WL.note+': '+cl(B.note,400)+'\n';
     m+=WL.people+': '+people+(kids?' (+ '+kids+' '+WL.children+')':'')+'\n\n'+WL.package+': '+PAY.pkg+'\n';
     L.forEach(function(l){m+='- '+l[0]+': '+inr(l[1])+'\n'});
-    m+='\n'+WL.total+': '+inr(total)+'\n'+WL.advance+': '+inr(v)+'\n'+WL.balance+': '+inr(total-v)+'\n'+WL.via+': '+METHODS[method];
-        try{window.TEE&&window.TEE.booking({name:B.name||'',phone:B.phone||'',visit_date:B.date||'',note:B.note||'',people:people,children:kids,lines:L,total:total,advance:v,method:method})}catch(e){}
+    m+='\n'+WL.total+': '+inr(total)+'\n'+WL.advance+': '+inr(v)+'\n'+WL.balance+': '+inr(total-v);
+        try{window.TEE&&window.TEE.booking({name:B.name||'',phone:B.phone||'',visit_date:B.date||'',note:B.note||'',people:people,children:kids,lines:L,total:total,advance:v,method:'whatsapp'})}catch(e){}
         var url='https://wa.me/'+PAY.wa+'?text='+encodeURIComponent(m),w=null;
     try{w=window.open(url,'_blank')}catch(e){}
     if(w){try{w.opener=null}catch(e){}}else{location.href=url}
